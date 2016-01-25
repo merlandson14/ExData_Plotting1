@@ -1,4 +1,27 @@
-## Introduction
+## My Code and PNG Files for ExData_Plotting1
+
+# Introduction
+
+There are four R code files that produce four PNG image files.
+
+The first step is to read in the zip file, unzip it, load it into a dataframe, and choose the appropriate rows. Prior investigation of the data showed that rows 66637-69516 contain the data for Feb 1 and 2, 2007, that is needed for the plots.
+
+The second step combines Date and Time columns into one new column DateTime, and then reformats DateTime into proper POSIX format "YYYY-MM-DD HH:MM:SS UTZ" using strptime().
+
+The third step is to build the plots with the base plotting system commands and output as PNG files.
+
+# Specific PNG File Info
+
+First plot is a histogram of the Global_Active_Power variable, shown with red bars.
+
+Second plot is a scatterplot of the Global_Active_Power variable over the two-day period, with lines instead of points.
+
+Third plot is another scatterplot of all three Submeterings plottted on top of each other over the two-day period, with 1 in black, 2 in red, and 3 in blue.
+
+Fourth plot is four plots together in a 2x2 grid. Top left is the Global_Active_Power plot. Bottom left is the Submeterings plot. Top right is a scatterplot of the Voltage variable over the two-day period, with lines instead of points. And bottom right is a scatterplot of the Global_Reactive_Power variable over the two-day period, with lines instead of points.
+
+
+## Introduction from Class Notes
 
 This assignment uses data from
 the <a href="http://archive.ics.uci.edu/ml/">UC Irvine Machine
